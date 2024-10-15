@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descendants</title>
+</head>
+<body>
+    <h1>Descendants</h1>
+    <ul>
+        {% for descendant in descendants %}
+            <li>{{ descendant.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

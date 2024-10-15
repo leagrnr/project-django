@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from project.views import show_descendants
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('descendants/<str:project_name>/', show_descendants, name='show_descendants'),
 ]
